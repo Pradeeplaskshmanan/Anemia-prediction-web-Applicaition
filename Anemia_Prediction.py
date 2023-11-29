@@ -75,9 +75,9 @@ def app():
 
     # getting input using input fields
     st.markdown("**Enter the RBC Indices information**")
-    hemoglobin = st.number_input("Enter Hemoglobin (g/dL)", value=12.0, min_value=0.0, step=0.1)
-    mch=st.number_input("Enter the MCH(pg)",value=27.0,min_value=0.0,step=0.1)
-    mcv = st.number_input("Enter MCV (fL)", value=90.0, min_value=0.0, step=0.1)
+    hemoglobin = st.number_input("Enter Hemoglobin (g/dL)", value=12.0, min_value=6.0, step=0.1)
+    mch=st.number_input("Enter the MCH(pg)",value=27.0,min_value=16.0,step=0.1)
+    mcv = st.number_input("Enter MCV (fL)", value=90.0, min_value=69.0, step=0.1)
     gender = st.radio("Select Gender", ['Male', 'Female'], index=0)
 
     # processing feeding the user data to the model to get the result
